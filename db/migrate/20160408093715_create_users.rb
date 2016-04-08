@@ -11,7 +11,7 @@ class CreateUsers < ActiveRecord::Migration
       t.float   :price
       t.boolean :del,default: 1
       t.timestamps null: false
-      t.index :username , unique: true
+      t.index :username
     end
   end
 end

@@ -2,7 +2,7 @@ class CreateMembers < ActiveRecord::Migration
   def change
     create_table :members do |t|
       t.string :openid
-      t.index :openid , unique: true
+      t.index :openid
       t.string :nickname
       t.boolean :sex
       t.string :city
